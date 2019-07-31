@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /home/pi/github-issue-thermal-printer
+cd /home/pi/recovery-issue
 PATH=/usr/local/bin:$PATH
 export TOKEN_GITHUB='your github token'
 export TOKEN_BITLY='your bitlytoken'
