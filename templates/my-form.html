@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Thermal Printer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+ </head>
+ <body class="sfondo">
+   <h1 class="w3-text-blue">GITHUB ISSUE THERMAL PRINTER</h1>
+   </br>
+   <center><img src="/static/image.jpg" alt="CH Logo" width="400px" height="200px "></center>
+   </br>
+  <center><div class="sfondo2 cubo" >
+  <center><h2 class="w3-text-blue">Select the issue to print</h2></center>
+  <form class="w3-container" method="POST">
+    </br>
+     <section class="password just">
+         <label class="w3-text-white" for="pi"><b>Insert the password</b></label>
+         <input class="w3-input   sfondo" type="password" name="pi" id="pi">
+     </section>
+   </br>
+     <section class="repository just">
+         <label class="w3-text-white " for="repo"><b>Insert the repository</b></label>
+         <input class="w3-input   sfondo" type="text" name="repo" id="repo">
+     </section>
+   </br>
+     <section class="number issue just">
+         <label  class="w3-text-white" for="number_issue"><b>Insert the number of the issue</b></label>
+         <input class="w3-input  sfondo" type="number" name="number_issue" id="number_issue" step="1">
+     </section>
+   </br>
+   <div id="div1">
+     <center><button class="w3-button w3-blue buttonHolder" onclick="replace()"  type="submit">PRINT!</button> </center>
+   </div>
+   <center><p><i class="fa fa-spinner w3-spin " style="font-size:64px; display: none;"></i></p></center>
+  </form>
+  </div></center>
+  </br>
+  </br>
+<script>
+function replace() {
+document.getElementById("div1").style.display="none";
+document.getElementsByTagName('I')[0].style.display ='block';
+}
+</script>
+ </body>
+</html>
