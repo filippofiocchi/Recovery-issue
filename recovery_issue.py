@@ -44,7 +44,7 @@ class Printer() :
              if len(self._title) < 16:
                  self._printer.print(self._title)
              else :
-                 self._printer.print(self._title[0:16]+'...')
+                 self._printer.print(self._title[0:15]+'...')
          else :
              self._printer.size = adafruit_thermal_printer.SIZE_MEDIUM
              self._printer.justify = adafruit_thermal_printer.JUSTIFY_CENTER
@@ -54,7 +54,7 @@ class Printer() :
              if len(self._title) < 16:
                  self._printer.print(self._title)
              else :
-                 self._printer.print(self._title[0:16]+'...')
+                 self._printer.print(self._title[0:15]+'...')
              time.sleep(7)
              self._printer.feed(1)
              self._printer.size = adafruit_thermal_printer.SIZE_MEDIUM
