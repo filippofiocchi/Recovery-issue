@@ -41,7 +41,7 @@ class Printer() :
              else :
                  self._printer.print(self._title[0:74]+'...')
          else :
-             self._printer.size = adafruit_thermal_printer.SIZE_MEDIUM
+             self._printer.size = adafruit_thermal_printer.SIZE_LARGE
              self._printer.justify = adafruit_thermal_printer.JUSTIFY_CENTER
              self._printer.print(self._repository[0:14]+'...')
              self._printer.size = adafruit_thermal_printer.SIZE_MEDIUM
